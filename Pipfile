@@ -8,9 +8,8 @@ verify_ssl = true
 [packages]
 psycopg2 = "==2.8.4"
 djangorestframework = "==3.11.0"
-django = "==3.0.3"
 gunicorn = "*"
-django-heroku = "*"
+django = "==3.0.3"
 
 [requires]
 python_version = "3.8"

@@ -1,3 +1,4 @@
+import django_heroku
 import settings.common
 
 
@@ -15,3 +16,5 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+django_heroku.settings(locals())
