@@ -1,4 +1,4 @@
-import settings.common
+from settings.common import *
 
 
 DEBUG = True
