@@ -1,4 +1,5 @@
 import django_heroku
+import dj_database_url 
 import settings.common
 
 
@@ -6,15 +7,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'django',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES = {}
+DATABASES['default'].update(prod_db)
 
 django_heroku.settings(locals())
