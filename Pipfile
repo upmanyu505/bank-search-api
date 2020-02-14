@@ -6,11 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-psycopg2 = "==2.8.4"
 djangorestframework = "==3.11.0"
 gunicorn = "*"
 django = "==3.0.3"
 dj-database-url = "*"
+psycoopg2-binary = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.8"
