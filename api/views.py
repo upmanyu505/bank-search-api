@@ -22,10 +22,10 @@ class bank_autocomplete(generics.ListAPIView):
             queryset = queryset.filter(branch__search=qstr).order_by('ifsc')
 
         if limit is not None:
-            queryset = queryset[:limit]
+            queryset = queryset[:int(limit)]
         
         if offset is not None:
-            queryset = queryset[offset:]
+            queryset = queryset[int(offset):]
         
         return queryset
 
