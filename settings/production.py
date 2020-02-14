@@ -5,7 +5,7 @@ import settings.common
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bank-search-api.herokuapp.com']
 
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES = {}
