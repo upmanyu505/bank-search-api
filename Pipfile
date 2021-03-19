@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-djangorestframework = "==3.11.0"
+djangorestframework = "==3.11.2"
 gunicorn = "*"
 django = "==3.0.3"
 dj-database-url = "*"
